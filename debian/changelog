@@ -1,0 +1,80 @@
+python-pampy (1.8.4-2) unstable; urgency=medium
+
+  * Team upload.
+  * Convert git repository from git-dpm to gbp layout
+  * Use debhelper-compat instead of debian/compat.
+  * Drop Python 2 support.
+  * Use pybuild for building package.
+  * Bump debhelper compat level to 12.
+  * Bump standards version to 4.4.0 (no changes).
+  * d/rules: Remove get-orig-source target.
+
+ -- Ondřej Nový <onovy@debian.org>  Sat, 10 Aug 2019 15:21:56 +0200
+
+python-pampy (1.8.4-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 25 Jun 2018 21:51:47 +0200
+
+python-pampy (1.8.3-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+  * d/watch: Use https protocol
+  * d/control: Remove ancient X-Python-Version field
+  * d/control: Remove ancient X-Python3-Version field
+
+  [ Mike Gabriel ]
+  * New upstream release (non-signed upstream tarball for this release).
+  * debian/control: Bump Standards-Version: to 4.1.4. No changes needed.
+  * debian/{control,compat}: Bump DH version compat level to 10.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 11 Jun 2018 13:48:48 +0200
+
+python-pampy (1.8.2-2) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Fix typo in D (python3-pampy): Change ${python:Depends} to
+      ${python3:Depends}. Spotted by Adrian Bunk. (Closes: #867447).
+    + Bump Standards-Version: to 3.9.8. No changes needed.
+
+  [ Ondřej Nový ]
+  * Fixed homepage (https)
+  * Fixed VCS URL (https)
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 06 Jul 2017 21:44:12 +0200
+
+python-pampy (1.8.2-1) unstable; urgency=low
+
+  [ Mike Gabriel ]
+  * New upstream release. (Closes: #785447).
+  * debian/control:
+    + Bump Standards: to 3.9.6. No changes needed.
+    + Add Python3 packaging support. New bin:package
+      python3-pampy.
+    + Use my debian.org mail address in Uploaders: field.
+  * debian/copyright:
+    + Update Upstream-Contact: field.
+    + Use Expat instead of MIT as license name.
+    + Update copyright holders, copyright years.
+  * debian/rules:
+    + Add get-orig-source rule.
+  * debian/watch:
+    + Obtain new watch file from pypi.debian.net.
+    + Add PGP/GnuPG signature support.
+  * debian/python{,3}-pampy.install:
+    + Install Python2/3 modules into separate packages.
+
+  [ Jakub Wilk ]
+  * Add Vcs-* fields.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 09 Jun 2015 00:26:59 +0200
+
+python-pampy (0.1.4-1) unstable; urgency=low
+
+  * Initial release. (Closes: #694666)
+
+ -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Wed, 28 Nov 2012 22:52:46 +0100
